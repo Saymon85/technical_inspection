@@ -14,7 +14,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* #### Scroll to top of page button styles ####  */
+/* #### SCROLL TO TOP OF PAGE BUTTON STYLES ####  */
 
 .btn-scrollTop {
   position: fixed;
@@ -39,7 +39,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ###  Header and navigation styles  ###   */
+/* ###  HEADER AND NAVIGATION STYLES  ###   */
 
 .header {
   background-color: #2f2e2e;
@@ -156,7 +156,7 @@ body {
   top: 10px;
 }
 
-/*  Styles when navigation is shown  */
+/* ####  STYLES WHEN NAVIGATION IS SHOWN  ####  */
 
 .menu-active nav {
   width: 100vw;
@@ -185,7 +185,7 @@ body {
   transform: rotate(135deg);
 }
 
-/*  Home section styles */
+/* ####  HOME SECTION STYLES #### */
 
 .home {
   background-image: url(../assets/pictures/home-min.jpg);
@@ -238,7 +238,7 @@ body {
   }
 }
 
-/*  Services section styles */
+/* ####  SERVICES SECTION STYLES  ####  */
 
 .services {
   background-color: #222222;
@@ -306,7 +306,7 @@ body {
   width: 80%;
 }
 
-/*   Our work section styles   */
+/*  ####  OUR WORK SECTION STYLES ####  */
 
 .work {
   background-color: #fff;
@@ -375,7 +375,23 @@ body {
   transition: opacity 0.4s ease-in;
 }
 
-.work-item span {
+.work-item__description-heading {
+  font-family: 'Helvetica Neue Thin';
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.work-item__description-text {
+  font-family: 'Helvetica Neue Thin';
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.work-item__expand {
   cursor: pointer;
   position: absolute;
   font-size: 1.5rem;
@@ -383,14 +399,54 @@ body {
   bottom: 20px;
 }
 
-/*     ### About Styles ###     */
+/*  ####  ABOUT SECTION  STYLES ####  */
 
 .about {
-  height: 50vh;
   background-color: #cecdd5;
+  padding: 10% 0;
 }
+
+.about__wrap {
+  background-color: white;
+  width: 280px;
+  min-width: 50%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.about__heading {
+  color: #000;
+  font-family: 'Helvetica Neue';
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.about__heading::after {
+  content: '';
+  display: block;
+  background-color: #000;
+  margin: 20px auto;
+  height: 3px;
+  width: 35px;
+}
+
+.about__text {
+  color: #000;
+  font-family: 'Helvetica Neue Thin';
+  letter-spacing: 1px;
+  line-height: 1.1rem;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  max-width: 85%;
+}
+
+/* ####  CONTACT SECTION STYLES  ####  */
 
 .contact {
   height: 50vh;
-  background-color: blanchedalmond;
+  background-color: #dbcc9c;
 }
