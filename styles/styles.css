@@ -112,7 +112,7 @@ textarea {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -181,6 +181,54 @@ textarea {
 
 .hamburger::after {
   top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .header-social,
+  .menu-toggle {
+    display: none;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .navigation {
+    transform: translateX(0%);
+    height: auto;
+    bottom: unset;
+    padding: 15px 0;
+  }
+
+  .navigation-list {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .navigation-list__item {
+    flex-grow: 1;
+    margin-right: 7px;
+    width: auto;
+  }
+
+  .navigation-list__item:last-of-type {
+    display: none;
+  }
+
+  .navigation-list__link {
+    font-size: 17px;
+    line-height: 1.5rem;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navigation-list {
+    width: 50%;
+  }
 }
 
 /* 
@@ -720,7 +768,7 @@ textarea {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 35px 25px;
+  padding: 35px 20px;
 }
 
 .footer-social {
@@ -737,12 +785,12 @@ textarea {
 .footer-item {
   color: #fff;
   font-family: 'Helvetica Neue Thin Extended';
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 1px;
+  line-height: 1.2rem;
   margin-top: 5px;
   text-align: center;
-  width: 100%;
 }
 
 .footer-item a {
