@@ -75,26 +75,28 @@
 
     <section id='services' class='services'>
       <h2 class='services__heading'>USLUGE</h2>
-      <div class='services-item'>
-        <img class='services-item__image' src='./assets/pictures/gear.svg' alt='gear icon'>
-        <h3 class='services-item__heading'>Tehnicki pregled</h3>
-        <p class='services-item__info'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
-        </p>
-      </div>
-      <div class='services-item'>
-        <img class='services-item__image services-item__image-lg' src='./assets/pictures/contract.svg' alt='contract icon'>
-        <h3 class=' services-item__heading'>Registracija</h3>
-        <p class='services-item__info'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
-        </p>
-      </div>
-      <div class='services-item'>
-        <img class='services-item__image' src='./assets/pictures/carwash.svg' alt='car wash icon'>
-        <h3 class='services-item__heading'>Pranje automobila</h3>
-        <p class='services-item__info'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
-        </p>
+      <div class="services-wrap">
+        <div class='services-item'>
+          <img class='services-item__image' src='./assets/pictures/gear.svg' alt='gear icon'>
+          <h3 class='services-item__heading'>Tehnicki pregled</h3>
+          <p class='services-item__info'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
+          </p>
+        </div>
+        <div class='services-item'>
+          <img class='services-item__image services-item__image-lg' src='./assets/pictures/contract.svg' alt='contract icon'>
+          <h3 class=' services-item__heading'>Registracija </h3>
+          <p class='services-item__info'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
+          </p>
+        </div>
+        <div class='services-item'>
+          <img class='services-item__image' src='./assets/pictures/carwash.svg' alt='car wash icon'>
+          <h3 class='services-item__heading'>Pranje automobila</h3>
+          <p class='services-item__info'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci voluptas temporibus ad beatae tempora aspernatur repellendus non et.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -187,16 +189,74 @@
         </p>
       </div>
     </section>
+    <section class="parallax">
+
+    </section>
 
     <section id='contact' class='contact'>
-
+      <img src="./assets/pictures/Potencijalne/9b6c7d_8352a6ee5a454a98a5278f9628ccc4ca.webp" alt="Car icon">
+      <h2 class="contact__heading">KONTAKT</h2>
+      <div class="contact__wrap">
+        <div class="contact__info">
+          <address class='address'>
+            <p class='contact__info-item'>Ulica: John Doe 123, 11000 Beograd, Srbija</p>
+            <p class='contact__info-item'>E-mail: office@mysite.com</p>
+            <p class='contact__info-item'>Tel: 011/ 123-456-789</p>
+            <h4 class='contact__info-heading'>RADNO VREME</h4>
+            <p class='contact__info-item'>Pon - Pet: 8:00 - 20:00 </p>
+            <p class='contact__info-item'>Subota: 8:00 - 14:00</p>
+            <p class='contact__info-item'>Nedelja: Zatvoreno</p>
+          </address>
+        </div>
+        <div class="contact__form">
+          <form action="mail.php" method="POST">
+            <p class='contact__form-item'>
+              <label class='input-label' for='name'>
+                <abbr title='Obavezno polje'>*</abbr>Vase ime
+              </label>
+              <input class='input input-text' type='text' id='name' name='email' placeholder='Ime' required minlength='4'>
+            </p>
+            <p class='contact__form-item'>
+              <label class='input-label' for="email">
+                <abbr title='Obavezno polje'>*</abbr>Unesite Vas E-mail
+              </label>
+              <input class='input input-email' type="email" id='email' name='email' placeholder='E-mail' required>
+            </p>
+            <p class='contact__form-item'>
+              <label class='input-label' for="subject">Unesite naslov poruke</label>
+              <input class='input input-text' type='text' id='subject' name='subject' placeholder='Naslov'>
+            </p>
+            <p class='contact__form-item'>
+              <label class='input-label' for="message">Unesite poruku</label>
+              <textarea class='textarea' name="message" id="message" cols="30" rows='10' placeholder='Poruka'></textarea>
+            </p>
+            <p class='contact__form-item'>
+              <button class='btn-submit' type='submit'>Posalji</button>
+            </p>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <!-- MAIN SECTION END -->
 
-  <footer></footer>
+  <footer class='footer'>
+    <div class='footer-social'>
+      <a class='footer-social__link' href='https://www.facebook.com' target='_blank'>
+        <i class='fa fa-facebook fa-2x' aria-hidden='true'></i>
+      </a>
+      <a class='footer-social__link' href='https://www.pinterest.com' target='_blank'>
+        <i class='fa fa-pinterest-p fa-2x' aria-hidden='true'></i>
+      </a>
+      <a class='footer-social__link' href='https://www.instagram.com' target='_blank'>
+        <i class='fa fa-instagram fa-2x' aria-hidden='true'></i>
+      </a>
+    </div>
+    <p class='footer-item'>&copy Design by Jade&Andy</p>
+    <p class='footer-item'>Developed by <a href="mailto:nemanja.simeunovic@gmail.com">Nemanja Simeunovic</a></p>
+  </footer>
   <script src='./scritps/main.js'></script>
 </body>
 

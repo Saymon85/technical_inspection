@@ -1,5 +1,13 @@
 @import './fonts.css';
 
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /   #  GLOBAL AND RESET STYLES   #       /
+   /                                        /   
+   //////////////////////////////////////////
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +19,24 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* #### SCROLL TO TOP OF PAGE BUTTON STYLES ####  */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   / #SCROLL TO TOP OF PAGE BUTTON STYLES # /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .btn-scrollTop {
   position: fixed;
@@ -39,7 +61,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ###  HEADER AND NAVIGATION STYLES  ###   */
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /   # HEADER AND NAVIGATION STYLES #     /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .header {
   background-color: #2f2e2e;
@@ -56,7 +84,6 @@ body {
   bottom: 0;
   height: 100vh;
   width: 100%;
-  /* opacity: 0; */
   transform: translateX(100%);
   transition: all 0.5s;
   transition-timing-function: linear;
@@ -156,12 +183,17 @@ body {
   top: 10px;
 }
 
-/* ####  STYLES WHEN NAVIGATION IS SHOWN  ####  */
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   / # STYLES WHEN NAVIGATION IS SHOWN #    /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .menu-active nav {
   width: 100vw;
   height: 100vh;
-  /* opacity: 1; */
   transform: translateX(0%);
   transition: all 0.5s ease-out;
   z-index: 90;
@@ -185,7 +217,13 @@ body {
   transform: rotate(135deg);
 }
 
-/* ####  HOME SECTION STYLES #### */
+/* 
+   /////////////////////////////////////// 
+   /                                     /
+   /    #   HOME SECTION STYLES  #       /
+   /                                     /   
+   ///////////////////////////////////////
+*/
 
 .home {
   background-image: url(../assets/pictures/home-min.jpg);
@@ -238,10 +276,18 @@ body {
   }
 }
 
-/* ####  SERVICES SECTION STYLES  ####  */
+/* 
+   /////////////////////////////////////// 
+   /                                     /
+   /   #  SERVICES SECTION STYLES #      /
+   /                                     /   
+   ///////////////////////////////////////
+*/
 
 .services {
-  background-color: #222222;
+  background-color: #222;
+  background-position: center;
+  background-size: cover;
   position: relative;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -251,7 +297,7 @@ body {
 .services__heading {
   color: #fff;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 3px;
   margin: 0 auto;
   margin-top: 30px;
@@ -297,7 +343,7 @@ body {
 
 .services-item__info {
   color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue Light', sans-serif;
   font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 1.4em;
@@ -306,7 +352,37 @@ body {
   width: 80%;
 }
 
-/*  ####  OUR WORK SECTION STYLES ####  */
+@media screen and (min-width: 700px) {
+  .services-wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .services-item {
+    width: 30%;
+  }
+
+  .services-item:nth-of-type(2) {
+    margin-top: 1.8em;
+  }
+
+  .services-item__heading {
+    width: 100%;
+  }
+
+  .services-item__info {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
+
+/* 
+   /////////////////////////////////////// 
+   /                                     /
+   /   #  OUR WORK SECTION STYLES #      /
+   /                                     /   
+   ///////////////////////////////////////
+*/
 
 .work {
   background-color: #fff;
@@ -316,9 +392,9 @@ body {
 }
 
 .work__heading {
-  color: #000;
+  color: #2f2e2e;
   font-family: 'Helvetica Neue';
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 3px;
   margin: 0 auto;
   margin-top: 30px;
@@ -366,7 +442,7 @@ body {
   left: 0;
   right: 0;
   padding: 0 50px;
-  z-index: 100;
+  z-index: 90;
   transition: opacity 0.4s ease-in;
 }
 
@@ -377,7 +453,7 @@ body {
 
 .work-item__description-heading {
   font-family: 'Helvetica Neue Thin';
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 30px;
@@ -399,10 +475,17 @@ body {
   bottom: 20px;
 }
 
-/*  ####  ABOUT SECTION  STYLES ####  */
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /    #  ABOUT SECTION STYLES   #         /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .about {
   background-color: #cecdd5;
+  background-image: url('../assets/pictures/toolsbackground.webp');
   padding: 10% 0;
 }
 
@@ -415,9 +498,9 @@ body {
 }
 
 .about__heading {
-  color: #000;
+  color: #2f2e2e;
   font-family: 'Helvetica Neue';
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 3px;
   margin: 0 auto;
   text-align: center;
@@ -436,17 +519,236 @@ body {
 .about__text {
   color: #000;
   font-family: 'Helvetica Neue Thin';
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant-caps: normal;
   letter-spacing: 1px;
-  line-height: 1.1rem;
+  line-height: 1.4rem;
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;
   max-width: 85%;
 }
 
-/* ####  CONTACT SECTION STYLES  ####  */
+.parallax {
+  height: 30vh;
+  width: 100%;
+  background-color: #222;
+  background-image: url('../assets/pictures/garage2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .parallax {
+    height: 60vh;
+    background-position: middle center;
+  }
+}
+
+/* #cecdd5 color of contact background without image, #2F2E2E font color, rgba(110, 105, 104, 0.5) #6e6968 border */
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /    #  CONTACT SECTION STYLES   #       /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .contact {
-  height: 50vh;
-  background-color: #dbcc9c;
+  background-color: #cecdd5;
+  background-image: url('../assets/pictures/toolsbackground.webp');
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.contact img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.contact__heading {
+  color: #2f2e2e;
+  background-color: #fff;
+  font-family: 'Helvetica Neue';
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  width: 280px;
+  min-width: 50%;
+}
+
+.contact__heading::after {
+  content: '';
+  display: block;
+  background-color: #000;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 3px;
+  width: 35px;
+}
+
+.contact__wrap {
+  background-color: white;
+  width: 280px;
+  min-width: 50%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contact__info {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.address {
+  font-style: normal;
+}
+
+.contact__info-item {
+  margin: 15px 0;
+  font-family: 'Helvetica Neue Light';
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2f2e2e;
+}
+
+.contact__info-heading {
+  margin: 20px 0;
+  font-family: 'Helvetica Neue Light';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.contact__form-item {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input {
+  border: 1px solid #2f2e2e;
+  background-color: #fff;
+  color: #6e6968;
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px 0 5px 5px;
+}
+
+.input-label {
+  color: #2f2e2e;
+  font-family: 'Helvetica Neue Thin Condensed';
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.input-label abbr {
+  color: #ff4040;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding-right: 2px;
+  text-decoration: none;
+}
+
+.textarea {
+  border: 1px solid #2f2e2e;
+  color: #6e6968;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  resize: none;
+  overflow: auto;
+  padding: 5px;
+  text-align: left;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid #c4c4c4;
+  outline: 0;
+}
+
+.btn-submit {
+  background-color: #2f2e2e;
+  border: 1px solid #2f2e2e;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Helvetica Neue Roman';
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  margin-top: 10px;
+  transition: opacity 0.2s ease-in;
+}
+
+.btn-submit:hover {
+  opacity: 0.8;
+}
+
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /    #  FOOTER SECTION STYLES   #        /
+   /                                        /   
+   //////////////////////////////////////////
+*/
+
+.footer {
+  background-color: #2f2e2e;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 25px;
+}
+
+.footer-social {
+  display: none;
+}
+
+.footer-social__link {
+  color: #fff;
+  width: 28%;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-item {
+  color: #fff;
+  font-family: 'Helvetica Neue Thin Extended';
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-item a:hover {
+  text-decoration: underline;
 }
