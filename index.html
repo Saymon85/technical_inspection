@@ -72,6 +72,17 @@
       </div>
       <h1 class='home__main-heading'>Jane & John</h1>
       <h3 class='home__secondary-heading'>Tehnicki pregled</h3>
+      <div class="home-social">
+        <a class='home-social__link' href='https://www.facebook.com' target='_blank'>
+          <i class='fa fa-facebook fa-2x' aria-hidden='true'></i>
+        </a>
+        <a class='home-social__link' href='https://www.pinterest.com' target='_blank'>
+          <i class='fa fa-pinterest-p fa-2x' aria-hidden='true'></i>
+        </a>
+        <a class='home-social__link' href='https://www.instagram.com' target='_blank'>
+          <i class='fa fa-instagram fa-2x' aria-hidden='true'></i>
+        </a>
+      </div>
     </section>
 
     <section id='services' class='services'>
@@ -103,7 +114,7 @@
 
     <section id='work' class='work'>
       <h2 class='work__heading'>STA RADIMO</h2>
-      <div class='wrap'>
+      <div class='work-wrap'>
         <div class="work-item">
           <img class='work-item__image' src="./assets/pictures/mechanic-sm2.jpg" alt="mechanical car check">
           <div class='work-item__description'>
@@ -210,12 +221,12 @@
           </address>
         </div>
         <div class="contact__form">
-          <form action="mail.php" method="POST">
+          <form action="" method="GET">
             <p class='contact__form-item'>
               <label class='input-label' for='name'>
                 <abbr title='Obavezno polje'>*</abbr>Vase ime
               </label>
-              <input class='input input-text' type='text' id='name' name='email' placeholder='Ime' required minlength='4'>
+              <input class='input input-text' type='text' id='name' name='name' placeholder='Ime' required minlength='4'>
             </p>
             <p class='contact__form-item'>
               <label class='input-label' for="email">
@@ -224,12 +235,16 @@
               <input class='input input-email' type="email" id='email' name='email' placeholder='E-mail' required>
             </p>
             <p class='contact__form-item'>
-              <label class='input-label' for="subject">Unesite naslov poruke</label>
-              <input class='input input-text' type='text' id='subject' name='subject' placeholder='Naslov'>
+              <label class='input-label' for="subject">
+                <abbr title='Obavezno polje'>*</abbr>Unesite naslov poruke
+              </label>
+              <input class='input input-text' type='text' id='subject' name='subject' placeholder='Naslov' required>
             </p>
             <p class='contact__form-item'>
-              <label class='input-label' for="message">Unesite poruku</label>
-              <textarea class='textarea' name="message" id="message" cols="30" rows='10' placeholder='Poruka'></textarea>
+              <label class='input-label' for="message">
+                <abbr title='Obavezno polje'>*</abbr>Unesite poruku
+              </label>
+              <textarea class='textarea' name="message" id="message" cols="30" rows='10' placeholder='Poruka' required></textarea>
             </p>
             <p class='contact__form-item'>
               <button class='btn-submit' type='submit'>Posalji</button>
@@ -264,6 +279,7 @@
   <!-- FOOTER END -->
 
   <script src='./scritps/main.js'></script>
+  <script src='./scritps/formValidation.js'></script>
 </body>
 
 </html>

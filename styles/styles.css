@@ -41,7 +41,7 @@ textarea {
 .btn-scrollTop {
   position: fixed;
   right: 15px;
-  bottom: 25px;
+  bottom: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -87,6 +87,7 @@ textarea {
   transform: translateX(100%);
   transition: all 0.5s;
   transition-timing-function: linear;
+  z-index: 100;
 }
 
 .navigation-list {
@@ -95,7 +96,7 @@ textarea {
   align-items: center;
   flex-direction: column;
   list-style: none;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .navigation-list__item {
@@ -151,6 +152,7 @@ textarea {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  z-index: 200;
 }
 
 .hamburger {
@@ -194,6 +196,7 @@ textarea {
   }
 
   .navigation {
+    position: absolute;
     transform: translateX(0%);
     height: auto;
     bottom: unset;
@@ -239,16 +242,12 @@ textarea {
    //////////////////////////////////////////
 */
 
-.menu-active nav {
+.menu-active .navigation {
   width: 100vw;
   height: 100vh;
   transform: translateX(0%);
   transition: all 0.5s ease-out;
   z-index: 90;
-}
-
-.menu-active .menu-toggle {
-  z-index: 100;
 }
 
 .menu-active .hamburger {
@@ -288,7 +287,7 @@ textarea {
 }
 
 .home-icon {
-  border: 3px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   margin-top: -50px;
 }
@@ -305,6 +304,7 @@ textarea {
   font-family: 'Helvetica Neue Medium', sans-serif;
   font-size: 2.4rem;
   line-height: 40px;
+  letter-spacing: 1px;
   padding-top: 20px;
   text-shadow: 2px 2px 5px gray;
 }
@@ -314,13 +314,71 @@ textarea {
   font-family: 'Helvetica Neue Thin', sans-serif;
   font-size: 1.4rem;
   letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.home-social {
+  display: none;
+}
+
+@media screen and (orientation: landscape) and (min-width: 800px) {
+  .home {
+    margin-top: 75px;
+    height: calc(100vh - 75px);
+  }
+
+  .home-icon {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  .home {
+    height: calc(100vh - 80px);
+  }
+
+  .home-icon {
+    margin-top: 0;
+  }
+
+  .home-icon__image {
+    margin: -5px;
+    height: 130px;
+    width: 130px;
+  }
 }
 
 @media screen and (min-width: 900px) {
-  #home {
+  .home {
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
+    margin-top: 0;
+  }
+
+  .home-icon {
+    margin-top: -30vh;
+  }
+
+  .home-social {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .home-social__link {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #222;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0;
+    margin-right: 15px;
+    text-align: center;
   }
 }
 
@@ -334,9 +392,6 @@ textarea {
 
 .services {
   background-color: #222;
-  background-position: center;
-  background-size: cover;
-  position: relative;
   padding-top: 10px;
   padding-bottom: 50px;
   width: 100%;
@@ -424,6 +479,17 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .services {
+    padding: 60px 0 100px 0;
+  }
+
+  .services-wrap {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
 /* 
    /////////////////////////////////////// 
    /                                     /
@@ -434,7 +500,7 @@ textarea {
 
 .work {
   background-color: #fff;
-  position: relative;
+  padding-top: 10px;
   padding-bottom: 40px;
   width: 100%;
 }
@@ -459,7 +525,7 @@ textarea {
   width: 35px;
 }
 
-.wrap {
+.work-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -469,6 +535,7 @@ textarea {
 
 .work-item {
   position: relative;
+  z-index: 1;
 }
 
 .work-item__image {
@@ -523,6 +590,26 @@ textarea {
   bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .work {
+    padding: 60px 0 120px 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .work {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .work-item {
+    width: 33%;
+  }
+
+  .work-item__image {
+    width: 100%;
+  }
+}
 /* 
    ////////////////////////////////////////// 
    /                                        /
@@ -534,15 +621,15 @@ textarea {
 .about {
   background-color: #cecdd5;
   background-image: url('../assets/pictures/toolsbackground.webp');
-  padding: 10% 0;
+  padding: 15% 0;
 }
 
 .about__wrap {
   background-color: white;
-  width: 280px;
-  min-width: 50%;
+  width: 300px;
+  min-width: 60%;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 .about__heading {
@@ -579,6 +666,27 @@ textarea {
   text-align: center;
   max-width: 85%;
 }
+
+@media screen and (min-width: 800px) {
+  .about__wrap {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__wrap {
+    padding: 70px 25px;
+    width: 45%;
+  }
+}
+
+/* 
+   ////////////////////////////////////////// 
+   /                                        /
+   /    #  PARALLAX SECTION STYLES   #         /
+   /                                        /   
+   //////////////////////////////////////////
+*/
 
 .parallax {
   height: 30vh;
@@ -638,7 +746,7 @@ textarea {
   margin: 0 auto;
   padding-top: 30px;
   text-align: center;
-  width: 280px;
+  width: 300px;
   min-width: 50%;
 }
 
@@ -654,7 +762,7 @@ textarea {
 
 .contact__wrap {
   background-color: white;
-  width: 280px;
+  width: 300px;
   min-width: 50%;
   margin: 0 auto;
   padding: 30px 0;
@@ -700,6 +808,7 @@ textarea {
   height: 30px;
   margin-bottom: 15px;
   padding: 5px 0 5px 5px;
+  outline: none;
 }
 
 .input-label {
@@ -720,14 +829,15 @@ textarea {
 }
 
 .textarea {
-  border: 1px solid #2f2e2e;
+  border: 1px solid #2b2929;
   color: #6e6968;
   font-size: 1.1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   resize: none;
   overflow: auto;
   padding: 5px;
   text-align: left;
+  outline: none;
 }
 
 .input:focus,
@@ -752,6 +862,39 @@ textarea {
 
 .btn-submit:hover {
   opacity: 0.8;
+}
+
+.input--invalid {
+  border: 2px solid #ff4040;
+  outline: none;
+}
+
+@media screen and (min-width: 900px) {
+  .contact__heading {
+    padding-top: 50px;
+    min-width: 60%;
+  }
+
+  .contact__wrap {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 60px 20px;
+    min-width: 60%;
+  }
+
+  .contact__info {
+    margin: 0;
+    width: 50%;
+  }
+
+  .contact__form {
+    width: 50%;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+  }
 }
 
 /* 
@@ -799,4 +942,25 @@ textarea {
 }
 .footer-item a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: block;
+    text-align-last: center;
+    padding: 50px 30px;
+  }
+
+  .footer-social {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+  }
+
+  .footer-item {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
 }
