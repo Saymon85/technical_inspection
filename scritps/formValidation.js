@@ -3,7 +3,7 @@ const inputName = document.querySelector('#name');
 const inputEmail = document.querySelector('#email');
 const inputSubject = document.querySelector('#subject');
 const textArea = document.querySelector('textarea');
-console.log(form);
+
 function validateNameField() {
   const regex = /\d+|\W+/g;
 

@@ -13,6 +13,7 @@
 
   <script src='https://use.fontawesome.com/f356013b15.js'></script>
   <link href='./styles/styles.css' rel='stylesheet' type='text/css' />
+  <link href='./styles/modal.css' rel='stylesheet' type='text/css' />
 </head>
 
 <body>
@@ -123,7 +124,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='0' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -135,7 +136,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='1' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -147,7 +148,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='2' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -159,7 +160,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='3' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -171,7 +172,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='4' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -183,7 +184,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
             </p>
             <span class='work-item__expand'>
-              <i class="fa fa-expand" aria-hidden="true"></i>
+              <i id='5' class="fa fa-expand" aria-hidden="true"></i>
             </span>
           </div>
         </div>
@@ -253,7 +254,73 @@
         </div>
       </div>
     </section>
-
+    <section class='modal'>
+      <div class='modal-close-btn'></div>
+      <div class='slider-arrow slider-arrow--left'>
+        <i class="fa fa-4x fa-angle-left" aria-hidden="true"></i>
+      </div>
+      <div class='modal-wrap'>
+        <div class="modal-slider">
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/mechanic-sm2.jpg" alt="mechanical car check">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Provera motora</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/brakes-sm.jpg" alt="car brakes check">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Provera kocnica</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/electronic-sm.jpg" alt="car electronics check">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Provera elektronike</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/registration-sm.jpg" alt="car registration">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Registracija vozila</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/insurance-sm.jpg" alt="car insurance">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Osiguranje vozila</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+          <div class="modal-item">
+            <img class='modal-item__image' src="./assets/pictures/carwash-sm.jpg" alt="car wash">
+            <div class='modal-item__description'>
+              <h3 class='modal-item__description-heading'>Pranje Vozila</h3>
+              <p class='modal-item__description-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde fuga ea corporis alias rem deleniti facere possimus quod esse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='slider-arrow slider-arrow--right'>
+        <i class="fa fa-4x fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </section>
   </main>
 
   <!-- MAIN SECTION END -->
@@ -280,6 +347,7 @@
 
   <script src='./scritps/main.js'></script>
   <script src='./scritps/formValidation.js'></script>
+  <script src='./scritps/modal.js'></script>
 </body>
 
 </html>
