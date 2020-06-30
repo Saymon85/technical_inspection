@@ -16,7 +16,7 @@
 
 .modal--active {
   transform: scale(1, 1);
-  transition: transform easy-in-out 0.5s;
+  transition: easy-in-out 0.5s;
 }
 
 .modal-close-btn {
