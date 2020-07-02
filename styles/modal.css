@@ -52,7 +52,6 @@
   display: flex;
   flex-wrap: nowrap;
   height: 90%;
-  transition: transform ease-in-out 0.8s;
   position: relative;
 }
 
@@ -60,14 +59,14 @@
   display: flex;
   align-items: center;
   min-width: 100%;
-  border: 1px solid black;
+  padding-left: 6px;
 }
 
 .modal-item__image {
+  box-shadow: 3px 3px 10px gray;
   display: block;
   width: 50%;
   max-height: 70%;
-  padding: 0 10px;
 }
 
 .modal-item__description {
@@ -107,4 +106,9 @@
 
 .slider-arrow:hover {
   cursor: pointer;
+}
+
+.slider-arrow--disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
