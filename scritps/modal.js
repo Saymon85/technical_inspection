@@ -5,11 +5,12 @@ const closeButton = document.querySelector('.modal-close-btn');
 let sliderOffset = 0;
 
 function openModal(e) {
-  const modalItem = document.querySelectorAll('.modal-item');
   const slider = document.querySelector('.modal-slider');
-
-  sliderOffset -= modalItem[e.target.id].offsetLeft;
-  slider.style.transform = `translateX(${sliderOffset}px)`;
+  sliderOffset = -e.target.id * slider.offsetWidth;
+  gsap.to('.modal-slider', {
+    transform: `translateX(${sliderOffset}px)`,
+    duration: 0.1,
+  });
   gsap.to('.modal', {
     transform: 'scale(1,1)',
     duration: 0.8,
@@ -36,7 +37,7 @@ sliderArrowRight.addEventListener('click', (e) => {
     sliderArrowRight.classList.add('slider-arrow--disabled');
     gsap.to('.modal-slider', {
       transform: `translateX(${sliderOffset}px)`,
-      duration: 1,
+      duration: 1.2,
       delay: 0.1,
       ease: 'back',
     });
@@ -56,7 +57,7 @@ sliderArrowLeft.addEventListener('click', (e) => {
   if (sliderOffset > -slider.offsetWidth) {
     gsap.to('.modal-slider', {
       transform: `translateX(0px)`,
-      duration: 1,
+      duration: 1.2,
       delay: 0.1,
       ease: 'back',
     });
