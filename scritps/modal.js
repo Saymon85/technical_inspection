@@ -5,6 +5,12 @@ const closeButton = document.querySelector('.modal-close-btn');
 let sliderOffset = 0;
 
 function openModal(e) {
+  if (document.body.offsetWidth < 800) return; // don't open modal for mobile phones
+  document.body.addEventListener('keyup', (e) => {
+    if (e.code === 'ArrowRight') moveSlideRight();
+    if (e.code === 'ArrowLeft') moveSlideLeft();
+    if (e.code === 'Escape') closeModal();
+  });
   const slider = document.querySelector('.modal-slider');
   sliderOffset = -e.target.id * slider.offsetWidth;
   gsap.to('.modal-slider', {
@@ -27,9 +33,10 @@ function closeModal() {
   sliderOffset = 0;
   sliderArrowLeft.classList.remove('slider-arrow--disabled');
   sliderArrowRight.classList.remove('slider-arrow--disabled');
+  document.body.removeEventListener('keyup', () => '');
 }
 
-sliderArrowRight.addEventListener('click', (e) => {
+function moveSlideRight() {
   const slider = document.querySelector('.modal-slider');
   sliderOffset -= slider.offsetWidth;
 
@@ -49,9 +56,9 @@ sliderArrowRight.addEventListener('click', (e) => {
     });
   }
   sliderArrowLeft.classList.remove('slider-arrow--disabled');
-});
+}
 
-sliderArrowLeft.addEventListener('click', (e) => {
+function moveSlideLeft() {
   const slider = document.querySelector('.modal-slider');
   sliderOffset += slider.offsetWidth;
   if (sliderOffset > -slider.offsetWidth) {
@@ -71,7 +78,9 @@ sliderArrowLeft.addEventListener('click', (e) => {
     });
   }
   sliderArrowRight.classList.remove('slider-arrow--disabled');
-});
+}
 
 expandWorkItem.forEach((item) => item.addEventListener('click', openModal));
 closeButton.addEventListener('click', closeModal);
+sliderArrowRight.addEventListener('click', moveSlideRight);
+sliderArrowLeft.addEventListener('click', moveSlideLeft);

@@ -7,7 +7,7 @@
    /                                        /   
    //////////////////////////////////////////
 */
-
+/* #cecdd5 color of contact background without image, #2F2E2E font color, rgba(110, 105, 104, 0.5) #6e6968 border  ---- REMINDER */
 * {
   margin: 0;
   padding: 0;
@@ -273,7 +273,7 @@ textarea {
 */
 
 .home {
-  background-image: url(../assets/pictures/home-min.jpg);
+  background-image: url(../assets/pictures/home-sm.jpg);
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
@@ -323,6 +323,7 @@ textarea {
 
 @media screen and (orientation: landscape) and (min-width: 800px) {
   .home {
+    background-image: url(../assets/pictures/home-min.jpg);
     margin-top: 75px;
     height: calc(100vh - 75px);
   }
@@ -692,7 +693,7 @@ textarea {
   height: 30vh;
   width: 100%;
   background-color: #222;
-  background-image: url('../assets/pictures/garage2.jpg');
+  background-image: url('../assets/pictures/garage-sm.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -701,6 +702,7 @@ textarea {
 
 @media screen and (min-width: 800px) {
   .parallax {
+    background-image: url('../assets/pictures/garage.jpg');
     background-attachment: fixed;
     background-size: cover;
     height: 80vh;
@@ -714,7 +716,6 @@ textarea {
   }
 }
 
-/* #cecdd5 color of contact background without image, #2F2E2E font color, rgba(110, 105, 104, 0.5) #6e6968 border */
 /* 
    ////////////////////////////////////////// 
    /                                        /
