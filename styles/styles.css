@@ -7,7 +7,7 @@
    /                                        /   
    //////////////////////////////////////////
 */
-/* #cecdd5 color of contact background without image, #2F2E2E font color, rgba(110, 105, 104, 0.5) #6e6968 border  ---- REMINDER */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Lato Regular', sans-serif;
 }
 
 button,
@@ -110,9 +110,9 @@ textarea {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Lato Thin', sans-serif;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
   padding: 10px 20px;
   text-decoration: none;
@@ -213,7 +213,7 @@ textarea {
 
   .navigation-list__item {
     flex-grow: 1;
-    margin-right: 7px;
+    margin-right: 10px;
     width: auto;
   }
 
@@ -228,9 +228,12 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .navigation-list {
-    width: 50%;
+    width: 60%;
+  }
+  .navigation-list__link {
+    font-size: 1.2rem;
   }
 }
 
@@ -301,8 +304,8 @@ textarea {
 
 .home__main-heading {
   color: white;
-  font-family: 'Helvetica Neue Medium', sans-serif;
-  font-size: 2.4rem;
+  font-family: 'Lato Black', sans-serif;
+  font-size: 2.7rem;
   line-height: 40px;
   letter-spacing: 1px;
   padding-top: 20px;
@@ -311,10 +314,10 @@ textarea {
 
 .home__secondary-heading {
   color: white;
-  font-family: 'Helvetica Neue Thin', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  margin-top: 5px;
+  font-family: 'Lato Light', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }
 
 .home-social {
@@ -330,6 +333,15 @@ textarea {
 
   .home-icon {
     margin-top: 10px;
+  }
+
+  .home__main-heading {
+    font-size: 3.2rem;
+  }
+
+  .home__secondary-heading {
+    font-size: 1.8rem;
+    margin-top: 15px;
   }
 }
 
@@ -400,9 +412,9 @@ textarea {
 
 .services__heading {
   color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 3px;
+  font-family: 'Lato Thin', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
@@ -435,8 +447,8 @@ textarea {
 
 .services-item__heading {
   color: #fff;
-  font-size: 1.3rem;
-  font-family: 'Helvetica Neue Thin', sans-serif;
+  font-size: 1.4rem;
+  font-family: 'Lato Thin', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -447,9 +459,9 @@ textarea {
 
 .services-item__info {
   color: #fff;
-  font-family: 'Helvetica Neue Light', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
+  font-family: 'Lato Light', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
   line-height: 1.4em;
   text-align: center;
   margin: 0 auto;
@@ -467,16 +479,11 @@ textarea {
   }
 
   .services-item:nth-of-type(2) {
-    margin-top: 1.8em;
+    margin-top: 2em;
   }
 
   .services-item__heading {
     width: 100%;
-  }
-
-  .services-item__info {
-    font-size: 1rem;
-    font-weight: 100;
   }
 }
 
@@ -508,9 +515,9 @@ textarea {
 
 .work__heading {
   color: #2f2e2e;
-  font-family: 'Helvetica Neue';
-  font-size: 1.8rem;
-  letter-spacing: 3px;
+  font-family: 'Lato Thin', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
@@ -568,15 +575,15 @@ textarea {
 }
 
 .work-item__description-heading {
-  font-family: 'Helvetica Neue Thin';
+  font-family: 'Lato Light', sans-serif;
   font-size: 1.75rem;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
 .work-item__description-text {
-  font-family: 'Helvetica Neue Thin';
+  font-family: 'Lato Light', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.5rem;
@@ -635,9 +642,9 @@ textarea {
 
 .about__heading {
   color: #2f2e2e;
-  font-family: 'Helvetica Neue';
-  font-size: 1.8rem;
-  letter-spacing: 3px;
+  font-family: 'Lato Thin', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
   margin: 0 auto;
   text-align: center;
   width: 50%;
@@ -653,13 +660,9 @@ textarea {
 }
 
 .about__text {
-  color: #000;
-  font-family: 'Helvetica Neue Thin';
-  font-size: 17px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  font-variant-caps: normal;
+  color: #222;
+  font-family: 'Lato Light', sans-serif;
+  font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.4rem;
   margin: 0 auto;
@@ -731,7 +734,7 @@ textarea {
   padding-bottom: 80px;
 }
 
-.contact img {
+.contact-image {
   display: block;
   width: 200px;
   height: 150px;
@@ -741,9 +744,9 @@ textarea {
 .contact__heading {
   color: #2f2e2e;
   background-color: #fff;
-  font-family: 'Helvetica Neue';
-  font-size: 1.8rem;
-  letter-spacing: 3px;
+  font-family: 'Lato Thin', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
   margin: 0 auto;
   padding-top: 30px;
   text-align: center;
@@ -779,19 +782,20 @@ textarea {
 }
 
 .contact__info-item {
-  margin: 15px 0;
-  font-family: 'Helvetica Neue Light';
-  font-size: 1rem;
-  font-weight: 500;
   color: #2f2e2e;
+  font-family: 'Lato Light', sans-serif;
+  font-size: 1rem;
+  /*   font-weight: 500;
+ */
+  margin: 15px 0;
 }
 
 .contact__info-heading {
-  margin: 20px 0;
-  font-family: 'Helvetica Neue Light';
-  font-weight: 400;
-  font-size: 1.5rem;
   color: #222;
+  font-family: 'Lato Light', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
 
 .contact__form-item {
@@ -814,10 +818,10 @@ textarea {
 
 .input-label {
   color: #2f2e2e;
-  font-family: 'Helvetica Neue Thin Condensed';
+  font-family: 'Leto Thin';
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  /*   font-weight: 600;
+  letter-spacing: 1px; */
   margin-bottom: 5px;
 }
 
@@ -852,9 +856,8 @@ textarea {
   border: 1px solid #2f2e2e;
   color: #fff;
   cursor: pointer;
-  font-family: 'Helvetica Neue Roman';
+  font-family: 'Leto Light';
   font-size: 1rem;
-  font-weight: 100;
   letter-spacing: 1px;
   padding: 8px 10px;
   margin-top: 10px;
@@ -928,9 +931,8 @@ textarea {
 
 .footer-item {
   color: #fff;
-  font-family: 'Helvetica Neue Thin Extended';
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-family: 'Leto Light', sans-serif;
+  font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.2rem;
   margin-top: 5px;
@@ -938,9 +940,20 @@ textarea {
 }
 
 .footer-item a {
+  position: relative;
   color: #fff;
   text-decoration: none;
 }
+
+/* .footer-item a::after {
+  content: '';
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+} */
 .footer-item a:hover {
   text-decoration: underline;
 }

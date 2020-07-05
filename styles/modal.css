@@ -1,3 +1,11 @@
+/* 
+   /////////////////////////////////////// 
+   /                                     /
+   /   ####  MODAL STYLES ####           /
+   /                                     /   
+   ///////////////////////////////////////
+*/
+
 .modal {
   background-color: #fff;
   display: flex;
@@ -77,14 +85,34 @@
 }
 
 .modal-item__description-heading {
-  font-size: 1.4rem;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
+  font-family: 'Lato Light';
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 .modal-item__description-text {
-  font-size: 1.1rem;
+  font-family: 'Lato Light';
+  font-size: 1.2rem;
 }
+
+@media screen and (min-width) {
+  .modal-item__description-heading {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  }
+
+  .modal-item__description-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* 
+   /////////////////////////////////////// 
+   /                                     /
+   /   ####  SLIDER STYLES ####          /
+   /                                     /   
+   ///////////////////////////////////////
+*/
 
 .slider-arrow {
   display: inline-block;

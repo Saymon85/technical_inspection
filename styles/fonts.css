@@ -1,64 +1,24 @@
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../assets/fonts/HelveticaNeue.ttf');
+  font-family: 'Lato Thin';
+  src: url('../assets/fonts/lato/Lato-Thin.ttf');
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Thin';
-  src: url('../assets/fonts/HelveticaNeue\ Thin.ttf');
+  font-family: 'Lato Light';
+  src: url('../assets/fonts/lato/Lato-Light.ttf');
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Thin Condensed';
-  src: url('../assets/fonts/HelveticaNeueLTStd-ThCn.otf');
+  font-family: 'Lato Regular';
+  src: url('../assets/fonts/lato/Lato-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Thin Extended';
-  src: url('../assets/fonts/HelveticaNeueLTStd-ThEx.otf');
+  font-family: 'Lato Bold';
+  src: url('../assets/fonts/lato/Lato-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Light';
-  src: url('../assets/fonts/HelveticaNeue\ Light.ttf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Lightv2';
-  src: url('../assets/fonts/HelveticaNeueCyr-Light.ttf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue UltraLight';
-  src: url('../assets/fonts/HelveticaNeue-UltraLight.ttf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue UltraLightv2';
-  src: url('../assets/fonts/HelveticaNeueLTStd-UltLt.otf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue UltraLight Condensed';
-  src: url('../assets/fonts/HelveticaNeueLTStd-UltLtCn.otf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue UltraLight Extended';
-  src: url('../assets/fonts/HelveticaNeueLTStd-LtEx.otf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Medium';
-  src: url('../assets/fonts/HelveticaNeue\ Medium.ttf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Mediumv2';
-  src: url('../assets/fonts/HelveticaNeueCyr-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Roman';
-  src: url('../assets/fonts/HelveticaNeueCyr-Roman.ttf');
+  font-family: 'Lato Black';
+  src: url('../assets/fonts/lato/Lato-Black.ttf');
 }
