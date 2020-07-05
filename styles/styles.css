@@ -228,9 +228,15 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .navigation-list {
+    width: 55%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigation-list {
-    width: 60%;
+    width: 50%;
   }
   .navigation-list__link {
     font-size: 1.2rem;
