@@ -791,8 +791,6 @@ textarea {
   color: #2f2e2e;
   font-family: 'Lato Light', sans-serif;
   font-size: 1rem;
-  /*   font-weight: 500;
- */
   margin: 15px 0;
 }
 
@@ -815,7 +813,8 @@ textarea {
   border: 1px solid #2f2e2e;
   background-color: #fff;
   color: #6e6968;
-  font-size: 15px;
+  font-size: 1rem;
+  font-family: 'Lato Light', sans-serif;
   height: 30px;
   margin-bottom: 15px;
   padding: 5px 0 5px 5px;
@@ -826,8 +825,7 @@ textarea {
   color: #2f2e2e;
   font-family: 'Leto Thin';
   font-size: 1rem;
-  /*   font-weight: 600;
-  letter-spacing: 1px; */
+  letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
@@ -842,7 +840,8 @@ textarea {
 .textarea {
   border: 1px solid #2b2929;
   color: #6e6968;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: 'Lato Light', sans-serif;
   letter-spacing: 1px;
   resize: none;
   overflow: auto;
